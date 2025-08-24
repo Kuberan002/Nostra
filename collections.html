@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections - Nostra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Nostra</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collections.html">Collections</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="collections-container">
+            <h2>Our Collections</h2>
+            <div class="controls">
+                <input type="text" id="searchInput" placeholder="Search for products...">
+                <div class="filters">
+                    <button class="filter-btn" data-category="all">All</button>
+                    <button class="filter-btn" data-category="men">Men</button>
+                    <button class="filter-btn" data-category="women">Women</button>
+                    <button class="filter-btn" data-category="kids">Kids</button>
+                </div>
+            </div>
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be injected here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nostra. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+/* General Body Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main Content */
+main {
+    padding: 2rem 0;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 4rem 1rem;
+    background: #444;
+    color: #fff;
+}
+
+.btn {
+    display: inline-block;
+    background: #555;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+/* Collections Page */
+.collections-container {
+    width: 90%;
+    margin: auto;
+}
+
+.controls {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#searchInput {
+    padding: 0.5rem;
+    width: 50%;
+    max-width: 400px;
+    margin-bottom: 1rem;
+}
+
+.filters .filter-btn {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    background: #fff;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* Contact Form */
+.contact-form {
+    width: 80%;
+    margin: auto;
+    max-width: 600px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* New Styles Added Here */
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    width: 80%;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.about-me img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-me .about-text {
+    max-width: 500px;
+}
+/* End of New Styles */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+    }
+    
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+}
